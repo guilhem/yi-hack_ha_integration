@@ -558,7 +558,7 @@ class YiHackMqttCamera(Camera):
     @property
     def supported_features(self) -> CameraEntityFeature:
         """Return supported features."""
-        return CameraEntityFeature.STREAM | CameraEntityFeature.ON_OFF
+        return CameraEntityFeature.ON_OFF
 
     async def async_turn_off(self):
         """Turn off camera"""
